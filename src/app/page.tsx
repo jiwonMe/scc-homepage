@@ -35,6 +35,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Info Section */}
+      <section className="py-20 bg-[#22314A]">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-white font-bold leading-loose md:leading-loose">
+            접근성 정보를 쉽게 찾고, 이동을 시작하세요. <br />
+            지금까지 경험해보지 못한 접근성 중심 탐색 서비스, <br />
+            계단뿌셔클럽을 통해, 이동을 쉽게 생각하게 될 거에요. 
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

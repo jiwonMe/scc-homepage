@@ -1,12 +1,14 @@
 import React from "react";
 import { ArrowRight, Heart, Users, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600">
+      <Navbar />
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1559024094-4a1e4495c3c1?auto=format&fit=crop&q=80"

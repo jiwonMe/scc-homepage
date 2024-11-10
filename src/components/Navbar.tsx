@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import SCCLogo from "./scc-logo";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +41,7 @@ const Navbar: React.FC = () => {
       title: "활동 함께하기",
       href: "/activities",
       submenu: [
-        { title: "크러셔클���(개인참여)", href: "/activities/crusher-club" },
+        { title: "크러셔클럽(개인참여)", href: "/activities/crusher-club" },
         { title: "파트너/콜라보/제휴", href: "/activities/partnership" },
       ],
     },
@@ -86,7 +87,7 @@ const Navbar: React.FC = () => {
         fixed top-0 left-0 right-0 border-b
         ${isScrolled 
           ? 'bg-white/95 border-gray-200' 
-          : 'bg-transparent border-transparent'
+          : 'bg-transparent border-white/10'
         } 
         backdrop-blur-sm transition-all duration-200 z-50
       `}>
@@ -99,7 +100,7 @@ const Navbar: React.FC = () => {
                 ${isScrolled ? 'text-blue-500' : 'text-white'}
               `}
             >
-              계단뿌셔클럽
+              <SCCLogo color={isScrolled ? 'black' : 'white'} className="h-6"/>
             </Link>
 
             {/* Navigation Menu */}

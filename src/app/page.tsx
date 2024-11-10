@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "../components/navbar";
-import { CTAButton } from "../components/ui/cta-button";
+import Navbar from "@/components/navbar";
+import { CTAButton } from "@/components/ui/cta-button";
 import { FeatureSection } from "../components/sections/feature-section";
 
 export default function Home() {

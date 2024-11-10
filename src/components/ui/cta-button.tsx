@@ -3,10 +3,11 @@ import { cn } from "@/lib/utils"
 import { Button } from "./button"
 
 const ctaButtonClasses = cn(
+  "select-none",
   "min-w-[120px] h-[48px] px-[20px] py-4 rounded-md text-base font-medium transition-all duration-200",
-  "bg-white/10 text-white border border-white ",
+  "bg-white/10 text-white border border-white",
   "hover:bg-white hover:text-blue-500 hover:border-transparent",
-  "active:bg-blue-500 active:text-white active:border-transparent"
+  "active:bg-white active:text-blue-500 active:border-transparent"
 )
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -17,7 +18,6 @@ const CTAButton = React.forwardRef<HTMLButtonElement, CTAButtonProps>(
     return (
       <Button
         className={cn(
-          "h-[48px] px-[20px] py-4 rounded-md text-base font-medium transition-all duration-200",
           ctaButtonClasses,
           className
         )}

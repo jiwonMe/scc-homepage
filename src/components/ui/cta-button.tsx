@@ -10,7 +10,6 @@ const ctaButtonClasses = cn(
   "active:bg-white active:text-blue-500 active:border-transparent"
 )
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface CTAButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const CTAButton = React.forwardRef<HTMLButtonElement, CTAButtonProps>(

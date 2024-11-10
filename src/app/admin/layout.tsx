@@ -1,22 +1,20 @@
 import React from 'react';
-import { SidebarProvider } from "@/components/ui/sidebar";
-import AppSidebar from "@/components/admin/app-sidebar";
-import Navbar from '@/components/admin/navbar';
-import Footer from '@/components/footer';
+import { Sidebar } from '@/components/sidebar';
 
-// Admin Layout
-const AdminLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+// Layout type definition for admin pages
+interface AdminLayoutProps {
+  children: React.ReactNode;
+}
+
+// Admin layout component with sidebar
+const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <main>
-      <div className="min-h-screen flex flex-col w-full">
-        <Navbar />
+    <div className="flex min-h-screen">
+      <Sidebar className="hidden md:flex" />
+      <main className="flex flex-1 flex-col">
         {children}
-        <Footer />
-    </div>
       </main>
-      </SidebarProvider>
+    </div>
   );
 };
 

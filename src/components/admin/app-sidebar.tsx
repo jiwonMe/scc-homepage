@@ -21,7 +21,7 @@ const items = [
 ];
 
 // AppSidebar Component
-const AppSidebar: React.FC = () => {
+export const AppSidebar: React.FC = () => {
   return (
     <Sidebar>
       <SidebarContent>
@@ -46,5 +46,3 @@ const AppSidebar: React.FC = () => {
     </Sidebar>
   );
 };
-
-export default AppSidebar; 

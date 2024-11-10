@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sidebar } from '@/components/sidebar';
+import { AppSidebar } from '@/components/admin/app-sidebar';
 
 // Layout type definition for admin pages
 interface AdminLayoutProps {
@@ -10,7 +10,7 @@ interface AdminLayoutProps {
 const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen">
-      <Sidebar className="hidden md:flex" />
+      <AppSidebar />
       <main className="flex flex-1 flex-col">
         {children}
       </main>
